@@ -1,0 +1,53 @@
+ 
+<html>
+    <head>
+        <title>Registration Form</title>
+        <script type="text/javascript">
+            function age() {
+            x=document.getElementById("dob");
+            y=new Date();
+            z=y.getFullYear();
+            a=x.getFullYear();
+            age=z-x;
+            document.the_form.age.value=age;
+        }
+        function check(){
+            name=document.getElementById("name");
+            dob=document.getElementById("dob");
+            phone=document.getElementById("phone");
+            email=document.getElementById("email");
+            
+             if(phone.value.length!=10)
+            {
+                alert("phone number should be of length 10");
+            }
+           
+             if(name.value.length==0)
+            {
+                alert("There should be some name");
+            }
+           
+            if((name.value==-1)&&(dob.value==-1)&&(phone.value==-1)&&(email.value==-1))
+            {
+                alert("field to be filled ");
+            }
+           
+           
+        }
+            </script>
+    </head>
+    <body>
+        <pre>
+        <h2>Registration Form</h2>
+        <form name="the_form" onsubmit="check()">
+        Name : <input id="name" type="text" name="name"  ><br>
+        DOB  : <input id="dob"  type="date" name="dob"  ><br>
+        Age  : <input id="age" type="text" name="age"  ><br>
+        Phone: <input id="phone" type="number" name="phone"  ><br>
+        Email: <input id="email" type="email" name="email"  ><br>
+        <input type="reset" name="reset">    <input type="submit"  onclick="age();return false" name="submit" value="submit">
+     
+        </form>
+        </pre>
+    </body>
+</html>

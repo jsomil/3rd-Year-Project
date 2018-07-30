@@ -1,0 +1,82 @@
+
+
+<html>
+    <head>
+        <style>
+            div.container {
+                width: 100%;
+                border: 1px solid gray;
+            }
+
+            header, footer {
+                padding: 1em;
+                color: aquamarine;
+                background-color: crimson;
+                clear: left;
+                text-align: center;
+            }
+
+            nav {
+                float: left;
+                max-width: 160px;
+                margin: 0;
+                padding: 1em;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul a {
+                text-decoration: none;
+            }
+
+            article {
+                margin-left: 170px;
+                border-left: 1px solid gray;
+                padding: 1em;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <h1>ARTIFICIAL DIETICIAN</h1>
+            </header>
+
+                <nav>
+                    <ul>
+
+                        <form action="verify_user" method="post" />
+                        <h1 style="font-size: 40px; font-family: cursive;">LOGIN</h1>
+                        <div style="font-size:30px;">
+                            Login_id     <input type="text" name="login_id" required="required" value="" size="20" />
+                            Password     <input type="password" name="pwd" required="required" value="" size="20" />
+                            <select name="user">
+                                <option>User</option>
+                                <option>Admin</option>
+                            </select>
+                            <input type="submit" value="login" name="login" />
+                            <br>
+                        </div>
+                        <a  href="registration.jsp">New User ?</a>
+
+
+
+
+
+                    </ul>
+                </nav>
+                <img style="margin-left: 200px;" src="images/doctor_result_smile_white_background_79820_2560x1600.jpg" height="400" alt=""/>
+
+                <footer><h2> “Let food be the medicine and medicine be the food”</h2>
+
+
+                </footer>
+            </body>
+</html>
+
